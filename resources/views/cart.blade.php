@@ -35,12 +35,6 @@
                             </form>
                         </td>
                         <td>{{ $product->getPriceForCount() }}$</td>
-                        {{-- <td>
-                            <form action="{{ route('cartRemove', $product) }}" method="POST">
-                                @csrf
-                                <button type="submit" class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
-                            </form>
-                        </td> --}}
                     </tr>
                     <?php $counter++; ?>
                 @endforeach
